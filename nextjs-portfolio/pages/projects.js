@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Ross's Portfolio | Home</title>
+        <title>Ross's Portfolio | Projects</title>
       </Head>
 
       <main>
@@ -13,31 +13,49 @@ export default function Home() {
         <p className="description">
           Hi! I'm an aspiring full-stack developer studying at The Univesity of Tennesse in Knoxville!
         </p>
-        <footer>
-          <a
-            href="https://github.com/rossketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/github.svg" alt="Github Logo" className="logo" />
+
+        <div className="grid">
+          <a href="https://nextjs.org/docs" className="card">
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
           </a>
-          <a
-            href="https://linkedin.com/in/rossketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/linkedin.svg" alt="LinkedIn Logo" className="logo" />
-          </a>          
-          <a
-            href="https://facebook.com/ross.ketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/facebook.svg" alt="Facebook Logo" className="logo" />
+
+          <a href="https://nextjs.org/learn" className="card">
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
-        </footer>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/master/examples"
+            className="card"
+          >
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className="card"
+          >
+            <h3>Deploy &rarr;</h3>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+        </div>
       </main>
-    
+
+      <footer>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+        </a>
+      </footer>
+
       <style jsx>{`
         .container {
           min-height: 100vh;
@@ -67,7 +85,7 @@ export default function Home() {
         }
 
         footer img {
-          margin: 2rem;
+          margin-left: 0.5rem;
         }
 
         footer a {
@@ -158,7 +176,7 @@ export default function Home() {
         }
 
         .logo {
-          height: 3em;
+          height: 1em;
         }
 
         @media (max-width: 600px) {

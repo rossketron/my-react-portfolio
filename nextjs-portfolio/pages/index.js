@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/footer/footer'
 
 export default function Home() {
   return (
@@ -13,29 +14,7 @@ export default function Home() {
         <p className="description">
           Hi! I'm an aspiring full-stack developer studying at The Univesity of Tennesse in Knoxville!
         </p>
-        <footer>
-          <a
-            href="https://github.com/rossketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/github.svg" alt="Github Logo" className="logo" />
-          </a>
-          <a
-            href="https://linkedin.com/in/rossketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/linkedin.svg" alt="LinkedIn Logo" className="logo" />
-          </a>          
-          <a
-            href="https://facebook.com/ross.ketron"
-            target="_blank"
-            rel="noopener noreferrer"
-          >  
-            <img src="/facebook.svg" alt="Facebook Logo" className="logo" />
-          </a>
-        </footer>
+        <Footer />
       </main>
     
       <style jsx>{`
@@ -53,25 +32,6 @@ export default function Home() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin: 2rem;
-        }
-
-        footer a {
-          display: flex;
           justify-content: center;
           align-items: center;
         }
@@ -155,10 +115,6 @@ export default function Home() {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
-        }
-
-        .logo {
-          height: 3em;
         }
 
         @media (max-width: 600px) {

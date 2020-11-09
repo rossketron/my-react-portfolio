@@ -1,14 +1,36 @@
+import styles from './footer.module.css'
+
 export default function Footer() {
   return (
-    <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      > <footer>
-        Find me on{' '}
-        <img src="/github.svg" alt="Vercel Logo" className="logo" />
-      </a>
-    </footer>
+      <footer className={styles.container}>
+        <a 
+          className={styles.footer_link}
+          href="https://github.com/rossketron"
+          target="_blank" 
+          rel="noopener noreferrer"> 
+          <img src="/github.svg" alt="Github Logo" className={styles.logo} />
+        </a>
+        <a 
+          className={styles.footer_link}
+          href="https://linkedin.com/in/rossketron"
+          target="_blank"
+          rel="noopener noreferrer">  
+          <img src="/linkedin.svg" alt="LinkedIn Logo" className={styles.logo} />
+        </a>          
+        <a 
+          className={styles.footer_link}
+          href="https://facebook.com/ross.ketron"
+          target="_blank"
+          rel="noopener noreferrer">  
+          <img src="/facebook.svg" alt="Facebook Logo" className={styles.logo} />
+        </a>
+        <a 
+          className={styles.footer_link}
+          href="https://twitter.com/KetronRoss"
+          target="_blank"
+          rel="noopener noreferrer">  
+          <img src="/twitter.svg" alt="Twitter Logo" className={styles.logo} />
+        </a>
+      </footer>
   )
 }

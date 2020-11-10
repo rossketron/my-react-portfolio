@@ -1,14 +1,17 @@
 import Head from 'next/head'
 import Footer from '../components/footer/footer'
+import Layout from '../components/layout/layout'
+import Header from '../components/header/header'
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout>
       <Head>
         <title>Ross's Portfolio | Home</title>
       </Head>
 
       <main>
+        <Header />
         <h1 className="title">Ross Ketron</h1>
 
         <p className="description">
@@ -18,17 +21,7 @@ export default function Home() {
       </main>
     
       <style jsx>{`
-        .container {
-          background: #ECE9E6;  /* fallback for old browsers */
-          background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */          
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+
 
         main {
           padding: 5rem 0;
@@ -142,6 +135,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }

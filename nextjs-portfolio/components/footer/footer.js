@@ -1,7 +1,8 @@
 import styles from './footer.module.css'
 
-export default function Footer() {
-  return (
+class Footer extends React.Component {
+  render() {
+    return (
       <footer className={styles.container}>
         <a 
           className={styles.footer_link}
@@ -32,5 +33,8 @@ export default function Footer() {
           <img src="/twitter.svg" alt="Twitter Logo" className={styles.logo} />
         </a>
       </footer>
-  )
+    )
+  }
 }
+
+export default Footer

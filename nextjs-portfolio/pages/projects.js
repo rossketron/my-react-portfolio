@@ -1,27 +1,73 @@
 import Head from 'next/head'
+import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Layout from '../components/layout/layout'
-import Header from '../components/header/header'
 
 export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Ross's Portfolio | Home</title>
+        <title>Ross's Portfolio | Projects</title>
       </Head>
 
       <main>
         <Header />
-        <h1 className="title">Ross Ketron</h1>
+        <h1 className="title">Some of my projects!</h1>
 
         <p className="description">
-          Hi! I'm an aspiring full-stack developer studying at The Univesity of Tennesse in Knoxville!
+          I'm currently in the process of learning and developing more to showcase my skills in..
         </p>
-        <Footer />
-      </main>
-    
-      <style jsx>{`
+        <div className="language-icon-row">
+        <img src="/react.png" alt="React logo" className="logo" />
+        <img src="/html.svg" alt="HTML5 logo" className="logo" />
+        <img src="/css.svg" alt="css logo" className="logo" />
+        <img src="/javascript-icon.svg" alt="js logo" className="logo" />
+        <img src="/nodejs.jpg" alt="NodeJS logo" className="logo" />      
+        <img src="/mongodb.png" alt="MongoDB logo" className="logo" />              
+        </div>
 
+        <div className="grid">
+          <a href="https://nextjs.org/docs" className="card">
+            <h3>Documentation &rarr;</h3>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" className="card">
+            <h3>Learn &rarr;</h3>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/master/examples"
+            className="card"
+          >
+            <h3>Examples &rarr;</h3>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className="card"
+          >
+            <h3>Deploy &rarr;</h3>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+        </div>
+      </main>
+
+      <Footer />
+
+      <style jsx>{`
+        .container {
+          min-height: 100vh;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
         main {
           padding: 5rem 0;
@@ -30,6 +76,19 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .language-icon-row {
+          width: 100%;
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+
+        .logo {
+          height: 5rem;
         }
 
         a {

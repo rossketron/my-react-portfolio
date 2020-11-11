@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className="title">Ross Ketron</h1>
 
         <p className="description">
-          Hi! I'm an aspiring full-stack developer studying at The Univesity of Tennesse in Knoxville!
+          Hi! I'm an aspiring full-stack developer studying at The University of Tennessee in Knoxville!
         </p>
         <Footer />
       </main>

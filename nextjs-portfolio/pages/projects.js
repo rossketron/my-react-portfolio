@@ -66,9 +66,8 @@ export default function Home() {
             <p>Look out for future projects!</p>
           </div>
         </div>
+        <Footer />
       </main>
-
-      <Footer />
 
       <style jsx>{`
         .container {
@@ -151,6 +150,7 @@ export default function Home() {
 
           max-width: 800px;
           margin-top: 3rem;
+          margin-bottom: 3rem;
         }
 
         .card {

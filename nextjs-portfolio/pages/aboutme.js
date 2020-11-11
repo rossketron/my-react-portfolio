@@ -7,21 +7,23 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Ross's Portfolio | Home</title>
+        <title>Ross's Portfolio | About Me</title>
       </Head>
 
       <main>
         <Header />
-        <h1 className="title">Ross Ketron</h1>
+        <h1 className="title">About Me</h1>
 
         <p className="description">
-          Hi! I'm an aspiring full-stack developer studying at The Univesity of Tennesse in Knoxville!
+          I'm currently studying computer science at the University of Tennessee in Knoxville.
+          I also have a degree in Wildlife and Fisheries Science, and I'm very passionate about the outdoors.
+          I spent several years moving across the country working various wildlife research positions and as a wildland firefighter.
+          When not playing on computers, I'm usually exploring outside with my wife and dogs!
         </p>
         <Footer />
       </main>
     
       <style jsx>{`
-
 
         main {
           padding: 5rem 0;
@@ -30,22 +32,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
         }
 
         .title {
@@ -60,65 +46,12 @@ export default function Home() {
         }
 
         .description {
+          width: 80vw;
           line-height: 1.5;
           font-size: 1.5rem;
+          text-align: center;
         }
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
       `}</style>
 
       <style jsx global>{`

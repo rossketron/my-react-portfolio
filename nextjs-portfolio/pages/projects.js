@@ -18,42 +18,53 @@ export default function Home() {
           I'm currently in the process of learning and developing more to showcase my skills in..
         </p>
         <div className="language-icon-row">
-        <img src="/react.png" alt="React logo" className="logo" />
-        <img src="/html.svg" alt="HTML5 logo" className="logo" />
-        <img src="/css.svg" alt="css logo" className="logo" />
-        <img src="/javascript-icon.svg" alt="js logo" className="logo" />
-        <img src="/nodejs.jpg" alt="NodeJS logo" className="logo" />      
-        <img src="/mongodb.png" alt="MongoDB logo" className="logo" />              
+          <img src="/react.png" alt="React logo" className="logo" />
+          <img src="/html.svg" alt="HTML5 logo" className="logo" />
+          <img src="/css.svg" alt="css logo" className="logo" />
+          <img src="/javascript-icon.svg" alt="js logo" className="logo" />
+          <img src="/nodejs.jpg" alt="NodeJS logo" className="logo" />      
+          <img src="/mongodb.png" alt="MongoDB logo" className="logo" />              
         </div>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className="card">
+            <h3>Vanilla Superball</h3>
+            <p>Fun single page game similar to candy crush using vanilla js</p>
+            <a 
+              href="https://github.com/rossketron" 
+              className="code-link"
+              target="_blank" 
+              rel="noopener noreferrer"
+              >Check out the code!
+            </a>          </div>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className="card">
+            <h3>Zelda Recipe API</h3>
+            <p>Working on creating an API of all Zelda BOTW recipes</p>
+            <a 
+              href="https://github.com/rossketron" 
+              className="code-link"
+              target="_blank" 
+              rel="noopener noreferrer"
+              >Check out the code!
+            </a>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <div className="card" >
+            <h3>This Portfolio Site</h3>
+            <p>Built this site using React and NextJs</p>
+            <a 
+              href="https://github.com/rossketron/my-react-portfolio"
+              className="code-link"
+              target="_blank" 
+              rel="noopener noreferrer"
+              >Check out the code!
+            </a>          </div>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className="card">
+            <h3>More to Come..</h3>
+            <p>Look out for future projects!</p>
+          </div>
         </div>
       </main>
 
@@ -143,20 +154,27 @@ export default function Home() {
         }
 
         .card {
+          height: 200px;
+          width: 300px;
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
+          background-color: rgb(211,211,211,.3);
           color: #0070f3;
           border-color: #0070f3;
         }
@@ -167,9 +185,18 @@ export default function Home() {
         }
 
         .card p {
-          margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
+        }
+
+        .card a {
+          font-size: 1.25rem;
+          line-height: 1.5;
+          font-style: italic;
+        }
+
+        .card a:hover {
+          font-weight: 750;
         }
 
         @media (max-width: 600px) {

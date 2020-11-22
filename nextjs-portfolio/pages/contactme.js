@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/footer/footer'
 import Layout from '../components/layout/layout'
 import Header from '../components/header/header'
+import ContactForm from '../components/contact-form/contact-form'
 
 export default function Home() {
   return (
@@ -12,11 +13,8 @@ export default function Home() {
 
       <main>
         <Header />
-        <h1 className="title">Ross Ketron</h1>
-
-        <p className="description">
-          Hi! I'm an aspiring full-stack developer studying at The University of Tennessee in Knoxville!
-        </p>
+        
+        
         <Footer />
       </main>
     

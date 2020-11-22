@@ -1,57 +1,71 @@
 import Head from 'next/head'
-import Footer from '../components/footer/footer'
-import Layout from '../components/layout/layout'
 import Header from '../components/header/header'
+import Footer from '../components/footer/footer'
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>Ross's Portfolio | Home</title>
       </Head>
 
       <main>
         <Header />
-        <h1 className="title">Ross Ketron</h1>
-
-        <p className="description">
-          Hi! I'm an aspiring full-stack developer studying at The University of Tennessee in Knoxville!
-        </p>
-        <Footer />
+        <div className="content">
+          <h1 className="title">Hi, my name is<br/>Ross Ketron</h1>
+          <p className="description">
+            I am a <span id="i-am-a" className="dynamic">student.</span>
+          </p>
+          <Footer />
+        </div>
       </main>
     
       <style jsx>{`
 
 
         main {
+          background: url(/background.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 100vh;
           padding: 5rem 0;
-          flex: 1;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: left;
           align-items: center;
+        }
+
+        .content {
+          margin: 5rem 5rem;
         }
 
         .title {
           margin: 0;
-          line-height: 1.15;
           font-size: 4rem;
         }
 
         .title,
         .description {
-          text-align: center;
+          color: rgb(216,216,216);
+          text-align: left;
         }
 
         .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 3rem;
+        }
+
+        span {
+          color: crimson;
         }
 
         @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+          .main {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          }
+          .content {
+            margin: 2rem 2rem;
           }
         }
       `}</style>
@@ -70,6 +84,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </Layout>
+    </div>
   )
 }

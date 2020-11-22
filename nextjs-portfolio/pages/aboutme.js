@@ -12,44 +12,50 @@ export default function Home() {
 
       <main>
         <Header />
-        <h1 className="title">About Me</h1>
-
-        <p className="description">
-          I'm currently studying computer science at the University of Tennessee in Knoxville.
-          I also have a degree in Wildlife and Fisheries Science, and I'm very passionate about the outdoors.
-          I spent several years moving across the country working various wildlife research positions and as a wildland firefighter.
-          When not playing on computers, I'm usually exploring outside with my wife and dogs!
-        </p>
-        <Footer />
+          <img src="/hiking.png" />
+          <p className="description">
+            I'm currently studying computer science at the University of Tennessee in Knoxville.
+            I also have a degree in Wildlife and Fisheries Science, and I'm very passionate about the outdoors.
+            I spent several years moving across the country working various wildlife research positions and as a wildland firefighter.
+            When not playing on computers, I'm usually exploring outside with my wife and dogs!
+          </p>
       </main>
     
       <style jsx>{`
 
-        main {
+        main {          
+          background: black;
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 100vh;
           padding: 5rem 0;
-          flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-evenly;
           align-items: center;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
+        img {
+          margin-top: 2rem;
+          width: 30%;
         }
-
-        .title,
+      
         .description {
-          text-align: center;
-        }
-
-        .description {
-          width: 80vw;
+          color: rgb(216,216,216);
           line-height: 1.5;
           font-size: 1.5rem;
-          text-align: center;
+          text-align: left;
+          margin: 5rem;
+        }
+
+        @media (max-width: 600px) {
+          img {
+            width: 50%;
+            margin-top: 2rem;
+          }
+          .description {
+            margin: 2rem;
+          }
         }
 
       `}</style>

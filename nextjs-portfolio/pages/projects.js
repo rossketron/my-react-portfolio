@@ -5,72 +5,82 @@ import Layout from '../components/layout/layout'
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>Ross's Portfolio | Projects</title>
       </Head>
 
       <main>
         <Header />
-        <h1 className="title">Some of my projects!</h1>
-
         <p className="description">
           I'm currently in the process of learning and developing more to showcase my skills in..
         </p>
         <div className="language-icon-row">
-        <img src="/react.png" alt="React logo" className="logo" />
-        <img src="/html.svg" alt="HTML5 logo" className="logo" />
-        <img src="/css.svg" alt="css logo" className="logo" />
-        <img src="/javascript-icon.svg" alt="js logo" className="logo" />
-        <img src="/nodejs.jpg" alt="NodeJS logo" className="logo" />      
-        <img src="/mongodb.png" alt="MongoDB logo" className="logo" />              
+          <img src="/react.png" alt="React logo" className="logo" />
+          <img src="/html.svg" alt="HTML5 logo" className="logo" />
+          <img src="/css.svg" alt="css logo" className="logo" />
+          <img src="/javascript-icon.svg" alt="js logo" className="logo" />
+          <img src="/nodejs.jpg" alt="NodeJS logo" className="logo" />      
+          <img src="/mongodb.png" alt="MongoDB logo" className="logo" />              
         </div>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>Vanilla Superball</h3>
+              <p>Fun single page game similar to candy crush using vanilla js</p>
+            </div>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <div className="card-content">
+              <h3>Zelda Web-App</h3>
+              <p>Working on creating a web app to get all Zelda BOTW recipes</p>
+            </div>
+          </a>                 
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            <div className="card-content">
+              <h3>This Portfolio Site</h3>
+              <p>Built this site using React and NextJS</p>
+            </div>
+          </a>       
+
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>More to come..</h3>
+              <p>Look out for future projects!</p>
+            </div>
+          </a>  
+        </div>     
       </main>
 
-      <Footer />
-
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
 
         main {
-          padding: 5rem 0;
+          background: black;
+          min-height: 100vh;
+          padding: 5rem 5rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -88,48 +98,15 @@ export default function Home() {
         }
 
         .logo {
-          height: 5rem;
+          height: 3rem;
         }
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
         .description {
+          margin-top: 
           text-align: center;
-        }
-
-        .description {
+          color: rgb(216,216,216);
           line-height: 1.5;
           font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -137,28 +114,35 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
+          margin-bottom: 3rem;
         }
 
         .card {
+          background-color: rgb(153,0,0,0.3);
+          height: 300px;
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
-          color: inherit;
+          text-align: center;
+          color: rgb(216,216,216);
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
+          border: 1px solid crimson;
+          border-radius: 50%;
           transition: color 0.15s ease, border-color 0.15s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          background-color: rgb(211,211,211,.1);
+          color: crimson;
+          border-color: crimson;
         }
 
         .card h3 {
@@ -167,7 +151,6 @@ export default function Home() {
         }
 
         .card p {
-          margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
         }
@@ -194,6 +177,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </Layout>
+    </div>
   )
 }

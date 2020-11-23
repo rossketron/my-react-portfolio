@@ -5,15 +5,13 @@ import Layout from '../components/layout/layout'
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>Ross's Portfolio | Projects</title>
       </Head>
 
       <main>
         <Header />
-        <h1 className="title">Some of my projects!</h1>
-
         <p className="description">
           I'm currently in the process of learning and developing more to showcase my skills in..
         </p>
@@ -27,60 +25,62 @@ export default function Home() {
         </div>
 
         <div className="grid">
-          <div className="card">
-            <h3>Vanilla Superball</h3>
-            <p>Fun single page game similar to candy crush using vanilla js</p>
-            <a 
-              href="https://github.com/rossketron" 
-              className="code-link"
-              target="_blank" 
-              rel="noopener noreferrer"
-              >Check out the code!
-            </a>          </div>
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>Vanilla Superball</h3>
+              <p>Fun single page game similar to candy crush using vanilla js</p>
+            </div>
+          </a>
 
-          <div className="card">
-            <h3>Zelda Recipe API</h3>
-            <p>Working on creating an API of all Zelda BOTW recipes</p>
-            <a 
-              href="https://github.com/rossketron" 
-              className="code-link"
-              target="_blank" 
-              rel="noopener noreferrer"
-              >Check out the code!
-            </a>
-          </div>
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>Zelda Web-App</h3>
+              <p>Working on creating a web app to get all Zelda BOTW recipes</p>
+            </div>
+          </a>                 
 
-          <div className="card" >
-            <h3>This Portfolio Site</h3>
-            <p>Built this site using React and NextJs</p>
-            <a 
-              href="https://github.com/rossketron/my-react-portfolio"
-              className="code-link"
-              target="_blank" 
-              rel="noopener noreferrer"
-              >Check out the code!
-            </a>          </div>
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>This Portfolio Site</h3>
+              <p>Built this site using React and NextJS</p>
+            </div>
+          </a>       
 
-          <div className="card">
-            <h3>More to Come..</h3>
-            <p>Look out for future projects!</p>
-          </div>
-        </div>
-        <Footer />
+          <a
+            href="https://github.com/rossketron" 
+            className="code-link card"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <div className="card-content">
+              <h3>More to come..</h3>
+              <p>Look out for future projects!</p>
+            </div>
+          </a>  
+        </div>     
       </main>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
 
         main {
-          padding: 5rem 0;
+          background: black;
+          min-height: 100vh;
+          padding: 5rem 5rem;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -98,48 +98,15 @@ export default function Home() {
         }
 
         .logo {
-          height: 5rem;
+          height: 3rem;
         }
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
         .description {
+          margin-top: 
           text-align: center;
-        }
-
-        .description {
+          color: rgb(216,216,216);
           line-height: 1.5;
           font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -147,23 +114,22 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
           margin-bottom: 3rem;
         }
 
         .card {
-          height: 200px;
-          width: 300px;
+          background-color: rgb(153,0,0,0.3);
+          height: 300px;
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: center;
-          color: inherit;
+          color: rgb(216,216,216);
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
+          border: 1px solid crimson;
+          border-radius: 50%;
           transition: color 0.15s ease, border-color 0.15s ease;
           display: flex;
           flex-direction: column;
@@ -174,9 +140,9 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          background-color: rgb(211,211,211,.3);
-          color: #0070f3;
-          border-color: #0070f3;
+          background-color: rgb(211,211,211,.1);
+          color: crimson;
+          border-color: crimson;
         }
 
         .card h3 {
@@ -187,16 +153,6 @@ export default function Home() {
         .card p {
           font-size: 1.25rem;
           line-height: 1.5;
-        }
-
-        .card a {
-          font-size: 1.25rem;
-          line-height: 1.5;
-          font-style: italic;
-        }
-
-        .card a:hover {
-          font-weight: 750;
         }
 
         @media (max-width: 600px) {
@@ -221,6 +177,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </Layout>
+    </div>
   )
 }

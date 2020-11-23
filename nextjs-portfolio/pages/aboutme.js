@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Ross's Portfolio | About Me</title>
+        <title>Ross Ketron | About Me</title>
       </Head>
 
       <main>

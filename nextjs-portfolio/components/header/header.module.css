@@ -35,10 +35,10 @@
 
 .page_links a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
   color: rgb(216, 216, 216);
-  margin-right: 20px;
+  margin-right: 30px;
   transition: all 0.3s ease;
 }
 

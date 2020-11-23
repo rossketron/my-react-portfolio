@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 
+
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ross's Portfolio | Home</title>
+        <title>Ross Ketron | Home</title>
       </Head>
 
       <main>
@@ -14,7 +15,7 @@ export default function Home() {
         <div className="content">
           <h1 className="title">Hi, my name is<br/>Ross Ketron</h1>
           <p className="description">
-            I am a <span id="i-am-a" className="dynamic">student.</span>
+            I am a <span id="i-am-a" className="dynamic"> student.</span>
           </p>
           <Footer />
         </div>

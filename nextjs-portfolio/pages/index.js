@@ -1,7 +1,7 @@
 import Head from 'next/head'
+import TextLoop from 'react-text-loop'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
-
 
 export default function Home() {
   return (
@@ -15,7 +15,18 @@ export default function Home() {
         <div className="content">
           <h1 className="title">Hi, my name is<br/>Ross Ketron</h1>
           <p className="description">
-            I am a <span id="i-am-a" className="dynamic"> student.</span>
+            I am a <span> </span>
+            <span id="i-am-a" className="dynamic">
+              <TextLoop children={[
+                "student.",
+                "developer.",
+                "learner.",
+                "problem solver.",
+                "husband.",
+                "coffee lover."
+              ]} 
+              springConfig={{ stiffness: 125, damping: 10 }} />
+            </span>
           </p>
           <Footer />
         </div>
@@ -38,6 +49,7 @@ export default function Home() {
 
         .content {
           margin: 5rem 5rem;
+          width: 500px;
         }
 
         .title {
@@ -86,5 +98,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
-}
+  );
+};

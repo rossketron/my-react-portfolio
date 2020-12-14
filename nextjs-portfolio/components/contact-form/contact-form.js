@@ -3,7 +3,7 @@ import * as emailjs from 'emailjs-com'
 import styles from './contact-form.module.css'
 
 const toName = "Ross Ketron"
-const toEmail = "rossketron@gmail.com"
+const toEmail = "yodaross22@gmail.com"
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -14,41 +14,21 @@ class ContactForm extends React.Component {
       subject: "Subject",
       message: "Message"
     }
+  }
 
     render() {
       return (
-        <div className="container">
-          <div class="row input-container">
-               <div class="col-xs-12">
-                 <div class="styled-input wide">
-                   <input type="text" required />
-                   <label>Name</label> 
-                 </div>
-               </div>
-               <div class="col-md-6 col-sm-12">
-                 <div class="styled-input">
-                   <input type="text" required />
-                   <label>Email</label> 
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                  <input type="text" required />
-                  <label>Phone Number</label> 
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <textarea required></textarea>
-                  <label>Message</label>
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-              </div>
-          </div>
+        <div>
+        <form className={styles.form}>      
+          <input name="name" type="text" className={styles.feedbackinput} required placeholder="Name" />   
+          <input name="email" type="text" className={styles.feedbackinput} required placeholder="Email" />
+          <input name="subject" type="text" className={styles.feedbackinput} required placeholder="Subject" />
+          <textarea name="text" className={styles.feedbackinput, styles.textarea} required placeholder="Message"></textarea>
+          <input type="submit" className={styles.submit} value="SUBMIT"/>
+        </form>
         </div>
       )
     }
   }
-}
+
+  export default ContactForm;

@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import styles from './header.module.css'
 
+
+
 class Header extends React.Component {
   render() {
     return (
@@ -10,6 +12,7 @@ class Header extends React.Component {
           <li><Link className={styles.link} href="/"><a>Home</a></Link></li>
           <li><Link className={styles.link} href="/aboutme"><a>About</a></Link></li>
           <li><Link className={styles.link} href="/projects"><a>Projects</a></Link></li>
+          <li><Link className={styles.link} href="/contactme"><a>Contact</a></Link></li>
         </ul>
       </header>
     )

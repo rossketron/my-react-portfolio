@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Contact from '../components/contact-form/contact-form'
 import Footer from '../components/footer/footer'
 import Header from '../components/header/header'
 
@@ -11,35 +12,11 @@ export default function Home() {
 
       <main>
         <Header />
-        
-        <div className="container">
-          <div className="input widebox">
-            <input type="text" required />
-            <label>Name</label>
-          </div>
-          <div className="input_row_container">
-            <div className="input narrowbox">
-              <input type="text" required />
-              <label>Email</label>
-            </div>
-            <div className="input narrowbox">
-              <input type="text" required />
-              <label>Subject</label>
-            </div>
-          </div>
-          <div className="input widebox tallbox">
-            <input type="text" required />
-            <label>Message</label>
-          </div>
-        </div>
-        
-        
+        <Contact />
         <Footer />
       </main>
     
       <style jsx>{`
-
-
         main {
           background: black;
           height: 100vh;
@@ -49,13 +26,7 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
-        container {
-          width: 950px;
-        }
-
       `}</style>
-
       <style jsx global>{`
         html,
         body {

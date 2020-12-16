@@ -13,7 +13,6 @@ export default function Home() {
       <main>
         <Header />
         <Contact />
-        <Footer />
       </main>
     
       <style jsx>{`

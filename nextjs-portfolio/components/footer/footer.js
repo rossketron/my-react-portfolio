@@ -23,7 +23,7 @@ class Footer extends React.Component {
           href="https://facebook.com/ross.ketron"
           target="_blank"
           rel="noopener noreferrer">  
-          <img src="/facebook.svg" alt="Facebook Logo" className={styles.logo} />
+          <img src="/facebook.png" alt="Facebook Logo" className={styles.logo} />
         </a>
         <a 
           className={styles.footer_link}

@@ -49,7 +49,7 @@ export default function Home() {
 
         .content {
           margin: 5rem 5rem;
-          width: 500px;
+          width: 450px;
         }
 
         .title {
@@ -65,6 +65,7 @@ export default function Home() {
 
         .description {
           font-size: 3rem;
+          margin-bottom: 5rem;
         }
 
         span {

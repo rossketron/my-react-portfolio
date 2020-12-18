@@ -46,7 +46,7 @@
   color: crimson;
 }
 
-.page_links a.active {
+li.active a {
   border-bottom: 2px solid crimson;
 }
 

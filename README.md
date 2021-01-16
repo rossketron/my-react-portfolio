@@ -1,5 +1,3 @@
-# my-react-portfolio
+# Web Portfolio built with React and NextJS
 
-Uses React, NextJs, HTML, CSS to create a web portfolio site
-
-View at rossketron.dev
+### [View](https://rossketron.dev/)
